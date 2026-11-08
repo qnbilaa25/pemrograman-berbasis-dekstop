@@ -28,6 +28,7 @@ public class MenuItem {
     }
 }
 
+
 public class Makanan extends MenuItem {
 
     public Makanan(String nama, double harga) {
@@ -42,6 +43,7 @@ public class Makanan extends MenuItem {
     }
 }
 
+
 public class Minuman extends MenuItem {
 
     public Minuman(String nama, double harga) {
@@ -55,6 +57,7 @@ public class Minuman extends MenuItem {
         System.out.println("Kategori: " + getKategori());
     }
 }
+
 
 public class Diskon extends MenuItem {
 
@@ -75,6 +78,7 @@ public class Diskon extends MenuItem {
         System.out.println("Diskon: " + diskon + "%");
     }
 }
+
 
 import java.util.*;
 import java.text.DecimalFormat;
@@ -183,6 +187,7 @@ public class Pesanan {
     }
 }
 
+
 import java.util.ArrayList;
 
 public class Menu {
@@ -222,6 +227,7 @@ public class Menu {
     }
 }
 
+
 public class PesananItem {
 
     private MenuItem item;
@@ -244,6 +250,7 @@ public class PesananItem {
         return item.getHarga() * jumlah;
     }
 }
+
 
 public class MenuItem {
     private String nama;
@@ -274,6 +281,7 @@ public class MenuItem {
         System.out.println("Kategori: " + kategori);
     }
 }
+
 
 import java.io.*;
 import java.util.*;
@@ -444,7 +452,6 @@ public class Main {
         System.out.println("Menu berhasil ditambahkan!");
     }
 
-    // Membuat pesanan
     private static void buatPesanan(Scanner input) {
 
         System.out.print("\nNama pelanggan: ");
@@ -511,7 +518,6 @@ public class Main {
         }
     }
 
-    // Menyimpan menu ke file
     private static void saveMenuToFile() {
 
         try (BufferedWriter bw =
