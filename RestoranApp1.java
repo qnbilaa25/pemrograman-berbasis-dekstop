@@ -13,7 +13,6 @@ public class Menu {
     }
 }
 
-
 import java.util.Scanner;
 
 public class Main {
